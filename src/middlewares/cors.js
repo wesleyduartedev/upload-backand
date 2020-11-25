@@ -1,7 +1,4 @@
-const jwt = require('jsonwebtoken')
 
-const authconfig = require('../config/auth.json');
-const { schema } = require('../models/User');
 
 module.exports = function (req, res, next) {
     res.header('Access-Control-Allow-Origin', '*');

@@ -4,6 +4,7 @@ const bodyParser = require('body-parser');
 const allowCors = require('./middlewares/cors');
 const morgan = require('morgan');
 const db = require('./db/database');
+const cors = require('cors')
 const app = express();
 const port = 4000;
 
@@ -13,6 +14,7 @@ const TicketController = require('./controllers/TicketController');
 const DashboardController = require('./controllers/DashboardController');
 const ProkjectController = require('./controllers/ProjectController');
 const UploadimageController = require('./controllers/UploadimageController');
+app.use(cors());
 app.use(express.json());
 app.use(bodyParser.urlencoded({extended:true}))
 app.use(morgan('dev'))
