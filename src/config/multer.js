@@ -36,11 +36,5 @@ module.exports = {
   })
 }
   
-    //     if (allowedMimes.includes(file.mimetype)) {
-    //       cb(null, true);
-    //     } else {
-    //       cb(new Error("Invalid file type."));
-    //     }
-    //   }
-    // };
+  
     
